@@ -1,0 +1,132 @@
+
+/* Hero banner */
+.banniere-accueil {
+    padding: 96px 24px;
+    text-align: center;
+    background-color: #ffffff;
+    background-image: radial-gradient(
+        #dbe2ea 1px,
+        transparent 1px
+    );
+    background-size: 24px 24px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.banniere-contenu {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.surtitre {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.banniere-accueil h1 {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #0a2042;
+    font-size: 56px;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+}
+
+.banniere-accueil h1 span {
+    color: #2563eb;
+}
+
+.banniere-accueil p {
+    max-width: 680px;
+    margin: 24px auto 28px;
+    color: #6b7280;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Articles section */
+.section-articles {
+    padding: 80px 24px;
+}
+
+.entete-articles {
+    max-width: 1200px;
+    margin: 0 auto 36px;
+    text-align: center;
+}
+
+.entete-articles .surtitre {
+    margin-bottom: 8px;
+}
+
+.entete-articles h2 {
+    margin-bottom: 10px;
+    color: #111827;
+    font-size: 32px;
+}
+
+.entete-articles p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+/* Container for cards */
+.conteneur-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .banniere-accueil {
+        padding: 72px 20px;
+    }
+
+    .banniere-accueil h1 {
+        font-size: 42px;
+    }
+
+    .banniere-accueil p {
+        font-size: 15px;
+    }
+
+    .section-articles {
+        padding: 56px 20px;
+    }
+
+    .conteneur-articles {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banniere-accueil {
+        padding: 56px 16px;
+    }
+
+    .banniere-accueil h1 {
+        font-size: 34px;
+        letter-spacing: -0.5px;
+    }
+
+    .banniere-accueil p {
+        font-size: 14px;
+    }
+
+    .entete-articles h2 {
+        font-size: 26px;
+    }
+
+    .carte-article {
+        max-width: 100%;
+    }
+}
